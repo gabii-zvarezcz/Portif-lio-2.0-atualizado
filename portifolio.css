@@ -216,6 +216,7 @@
       font-weight: 700;
       color: var(--purple);
       text-transform: uppercase;
+      margin-top: 20px;
       letter-spacing: 1px;
       margin-bottom: 8px;
       padding-bottom: 4px;
@@ -350,6 +351,31 @@
       opacity: 1;
       transform: translateY(0);
     }
+
+    /* ── HABILIDADES (CV) ── */
+    .skills {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.skill {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skill span:first-child {
+  font-weight: bold;
+  color: #555;
+  font-size: 18px;
+}
+
+.skill span:last-child {
+  color: #888;
+  font-size: 18px;
+}
 
     /* ── RESPONSIVE ── */
     @media (max-width: 700px) {
