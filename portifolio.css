@@ -378,13 +378,103 @@
 }
 
     /* ── RESPONSIVE ── */
+   /* ── RESPONSIVE MOBILE ADJUSTMENTS ── */
     @media (max-width: 700px) {
-      nav { padding: 14px 20px; }
-      .nav-links { gap: 14px; }
-      section { padding: 60px 20px; }
-      #hero { flex-direction: column; }
-      #sobre .sobre-body { flex-direction: column-reverse; }
-      #projetos .proj-grid { grid-template-columns: 1fr; }
-      #contato .contact-body { flex-direction: column; }
-      footer { flex-direction: column; gap: 12px; }
+      nav { 
+        padding: 14px 16px; 
+        flex-direction: column;
+        gap: 10px;
+      }
+      .nav-links { 
+        gap: 14px; 
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .nav-links a {
+        font-size: 0.85rem;
+      }
+
+      section { 
+        padding: 48px 20px; 
+      }
+
+      h2 {
+        font-size: 1.3rem;
+        margin-bottom: 32px;
+      }
+
+      /* Hero Mobile */
+      #hero { 
+        flex-direction: column; 
+        text-align: center;
+        padding-top: 40px;
+        gap: 24px;
+      }
+      .hero-icon {
+        width: 140px;
+        height: 140px;
+      }
+      .hero-icon svg { 
+        width: 90px; 
+        height: 90px; 
+      }
+      .hero-text h1 {
+        font-size: 1.3rem;
+      }
+
+      /* Sobre mim Mobile */
+      #sobre .sobre-body { 
+        flex-direction: column-reverse; 
+        gap: 24px;
+        text-align: justify;
+      }
+      .foto-wrapper {
+        width: 160px;
+        height: 160px;
+      }
+
+      /* Currículo e Habilidades Mobile */
+      #curriculo .cv-box {
+        width: 100%;
+      }
+      .gcard-inner {
+        padding: 20px; 
+      }
+      .skill span:first-child {
+        color: var(--text) !important;
+        font-size: 16px;
+      }
+      .skill span:last-child {
+        color: var(--muted) !important;
+        font-size: 15px;
+      }
+
+      /* Projetos Mobile */
+      #projetos .proj-grid { 
+        grid-template-columns: 1fr; 
+        gap: 16px;
+      }
+      .proj-card-inner {
+        min-height: auto;
+        padding: 20px;
+      }
+
+      /* Contato Mobile */
+      #contato .contact-body { 
+        flex-direction: column; 
+        gap: 24px;
+      }
+      .contact-info {
+        width: 100%;
+      }
+      .contact-row {
+        font-size: 0.95rem;
+      }
+
+      footer { 
+        flex-direction: column; 
+        gap: 12px; 
+        text-align: center;
+        padding: 24px 20px;
+      }
     }
